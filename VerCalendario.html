@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Club de Patinaje Artistico</title>
+        <link rel="stylesheet" href="VerCalendario.css">
+        <link rel="icon" href="img/loggo.png">
+        <!--icono de la barr del menu para utilizar iconos de esa pagina-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+         <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav> 
+           <!--esto es para que el menu sea reesposiv es decir de adapte a cualquier telefono o table etc-->
+           <!--as primeras tres lineas es para que cuando abra la pagina en el celu aparezca el menu al lado para entrar y ver los enlaces-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <!--iconosss-->
+                <i class="fas fa-bars"></i>      
+            </label>
+            <a href="#" class="enlace">
+                <img src="img/loggo.png" alt="" title="Club de Patinaje Artistico" class="logo">
+            </a>
+
+            <ul>
+                <li><a  href="index.html">Inicio</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="inscripciones.html">Inscripciones</a></li>
+                <li><a href="abono.html">Abono</a></li>
+                <li><a  href="cuenta.html">Cuenta</a></li>
+            </ul>
+        </nav>
+
+        <section class="contenido">
+            <div class="calendario">
+                <h2>CALENDARIO 2023</h2>
+
+                <table>
+                    <tr class="mes">                       
+                        <th colspan="7">ENERO</th>
+                        <td></td>            
+                        <th colspan="7">FEBRERO</th>
+                        <td></td>   
+                        <th colspan="7">MARZO</th>
+                        <td></td>
+                        <th colspan="7">ABRIL</th>
+                    </tr>
+                    <tr class="dias">
+                        <td>D</td>   <!--Enero-->
+                        <td>L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->                                     
+                        <td>D</td>    <!--febrero-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->                  
+                        <td>D</td>   <!--Marzo-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->
+                        <td>D</td>    <!--Abril-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                    </tr>
+
+                    <tr class="num"> <!--semana 1-->
+                        <td >1</td><!--Enero-->
+                        <td >2</td>
+                        <td >3</td>
+                        <td >4</td>
+                        <td >5</td>
+                        <td >6</td>
+                        <td >7</td>
+                        <th></th><!--espacio-->
+                        <th></th> <!--febrero-->
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <th></th><!--espacio-->
+                        <th></th><!--Marzo-->
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <th></th><!--espacio-->
+                        <th></th><!--Abril-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                    </tr>
+                    <tr class="num"><!--semana 2-->
+                        <td >8</td><!--Enero-->
+                        <td >9</td>
+                        <td >10</td>
+                        <td >11</td>
+                        <td >12</td>
+                        <td >13</td>
+                        <td >14</td>
+                        <th></th><!--espacio-->
+                        <td>5</td> <!--febrero-->
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>                   
+                        <th></th><!--espacio-->
+                        <td>5</td><!--Marzo-->
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <th></th><!--espacio-->
+                        <td>2</td><!--Abril-->
+                        <td>3</td>   
+                        <td>4</td>   
+                        <td>5</td>   
+                        <td>6</td>   
+                        <td>7</td>   
+                        <td>8</td> 
+                    </tr>
+                    <tr class="num"> <!--semana 3-->
+                        <td class="e1">15</td><!--Enero-->
+                        <td class="e1">16</td>
+                        <td class="e1">17</td>
+                        <td class="e1">18</td>
+                        <td class="e1">19</td>
+                        <td class="e1">20</td>
+                        <td class="e1">21</td>
+                        <th></th><!--espacio-->
+                        <td>12</td> <!--febrero-->
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <th></th><!--espacio-->
+                        <td>12</td><!--Marzo-->
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <th></th><!--espacio-->
+                        <td>9</td><!--Abril-->
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="num"> <!--semana 4-->
+                        <td class="e1">22</td><!--Enero-->
+                        <td class="e1">23</td>
+                        <td class="e1">24</td>
+                        <td class="e1">25</td>
+                        <td class="e1">26</td>
+                        <td class="e1">27</td>
+                        <td class="e1"> 28</td>
+                        <th></th><!--espacio-->
+                        <td>19</td> <!--febrero-->
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <th></th><!--espacio-->
+                        <td>19</td><!--Marzo-->
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <th></th><!--espacio-->
+                        <td>16</td><!--Abril-->
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr class="num"> <!--semana 5-->
+                        <td>29</td><!--Enero-->
+                        <td>30</td>
+                        <td>31</td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>26</td> <!--febrero-->
+                        <td>27</td>
+                        <td>28</td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>26</td><!--Marzo-->
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>23</td><!--Abril-->
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr class="num"> <!--semana 6-->
+                        <th></th><!--Enero-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <th></th><!--febrero-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <th></th><!--Marzo-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>30</td><!--Abril-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                    <tr class="mes">                       
+                        <th colspan="7">MAYO</th>
+                        <td></td>            
+                        <th colspan="7">JUNIO</th>
+                        <td></td>   
+                        <th colspan="7">JULIO</th>
+                        <td></td>
+                        <th colspan="7">AGOSTO</th>
+                    </tr>
+                    <tr class="dias">
+                        <td>D</td>   <!--Mayo-->
+                        <td>L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->                                     
+                        <td>D</td>    <!--Junio-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->                  
+                        <td>D</td>   <!--Julio-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->
+                        <td>D</td>    <!--Agosto-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                    </tr>
+                    <tr class="num"> <!--semana 1-->
+                        <th></th><!--Mayo-->
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <th></th><!--espacio-->
+                        <th></th> <!--Junio-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <th></th><!--espacio-->
+                        <th></th><!--Julio-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <th></th><!--espacio-->
+                        <th></th><!--Agosto-->
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="num"> <!--semana 2-->
+                        <td>7</td><!--Mayo-->
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <th></th><!--espacio-->
+                        <td>4</td> <!--Junio-->
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <th></th><!--espacio-->
+                        <td>2</td><!--Julio-->
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <th></th><!--espacio-->
+                        <td>6</td><!--Agosto-->
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="num"> <!--semana 3-->
+                        <td>14</td><!--Mayo-->
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <th></th><!--espacio-->
+                        <td>11</td> <!--Junio-->
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <th></th><!--espacio-->
+                        <td >9</td><!--Julio-->
+                        <td >10</td>
+                        <td >11</td>
+                        <td >12</td>
+                        <td >13</td>
+                        <td >14</td>
+                        <td >15</td>
+                        <th></th><!--espacio-->
+                        <td>13</td><!--Agosto-->
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr class="num"> <!--semana 4-->
+                        <td>21</td><!--Mayo-->
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <th></th><!--espacio-->
+                        <td>18</td> <!--Junio-->
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <th></th><!--espacio-->
+                        <td class="e2">16</td><!--Julio-->
+                        <td class="e2">17</td>
+                        <td class="e2">18</td>
+                        <td class="e2">19</td>
+                        <td class="e2">20</td>
+                        <td class="e2">21</td>
+                        <td class="e2">22</td>
+                        <th></th><!--espacio-->
+                        <td>20</td><!--Agosto-->
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr class="num"> <!--semana 5-->
+                        <td>28</td><!--Mayo-->
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>25</td> <!--Junio-->
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td class="e2">23</td><!--Julio-->
+                        <td class="e2">24</td>
+                        <td class="e2">25</td>
+                        <td class="e2">26</td>
+                        <td class="e2">27</td>
+                        <td class="e2">28</td>
+                        <td class="e2">29</td>
+                        <th></th><!--espacio-->
+                        <td>27</td><!--Agosto-->
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr class="num"> <!--semana 6-->
+                        <th></th><!--Mayo-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <th></th> <!--Junio-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td class="e2">30</td><!--Julio-->
+                        <td class="e2">31</td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <th></th><!--Agosto-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                    <tr class="mes">                       
+                        <th colspan="7">SEPTIEMBRE</th>
+                        <td></td>            
+                        <th colspan="7">OCTUBRE</th>
+                        <td></td>   
+                        <th colspan="7">NOVIEMBRE</th>
+                        <td></td>
+                        <th colspan="7">DICIEMBRE</th>
+                    </tr>
+                    <tr class="dias">
+                        <td>D</td>   <!--Septiembre-->
+                        <td>L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->                                     
+                        <td>D</td>    <!--Octubre-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->                  
+                        <td>D</td>   <!--Noviembre-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                        <th></th><!--espacio-->
+                        <td>D</td>    <!--Diciembre-->
+                        <td >L</td>   
+                        <td>M</td>   
+                        <td >M</td>   
+                        <td>J</td>   
+                        <td>V</td>   
+                        <td>S</td>
+                    </tr>
+                    <tr class="num"> <!--semana 1-->
+                        <th></th><!--Septiembre-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                        <th></th><!--espacio-->
+                        <td>1</td> <!--Octubre-->
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <th></th><!--espacio-->
+                        <th></th><!--Noviembre-->
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <th></th><!--espacio-->
+                        <th></th><!--Diciembre-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="num"> <!--semana 2-->
+                        <td>3</td><!--Septiembre-->
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <th></th><!--espacio-->
+                        <td>8</td> <!--Octubre-->
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <th></th><!--espacio-->
+                        <td>5</td><!--Noviembre-->
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <th></th><!--espacio-->
+                        <td>3</td><!--Diciembre-->
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr class="num"> <!--semana 3-->
+                        <td class="e3">10</td><!--Septiembre-->
+                        <td class="e3">11</td>
+                        <td class="e3">12</td>
+                        <td class="e3">13</td>
+                        <td class="e3">14</td>
+                        <td class="e3">15</td>
+                        <td class="e3">16</td>
+                        <th></th><!--espacio-->
+                        <td>15</td> <!--Octubre-->
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <th></th><!--espacio-->
+                        <td>12</td><!--Noviembre-->
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <th></th><!--espacio-->
+                        <td>10</td><!--Diciembre-->
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr class="num"> <!--semana 4-->
+                        <td>17</td><!--Septiembre-->
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <th></th><!--espacio-->
+                        <td class="e4">22</td> <!--Octubre-->
+                        <td class="e4">23</td>
+                        <td class="e4">24</td>
+                        <td class="e4">25</td>
+                        <td class="e4">26</td>
+                        <td class="e4">27</td>
+                        <td class="e4">28</td>
+                        <th></th><!--espacio-->
+                        <td>19</td><!--Noviembre-->
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <th></th><!--espacio-->
+                        <td>17</td><!--Diciembre-->
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td class="e5">22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr class="num"> <!--semana 5-->
+                        <td>24</td><!--Septiembre-->
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <th></th><!--espacio-->
+                        <td>29</td> <!--Octubre-->
+                        <td>30</td>
+                        <td>31</td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>26</td><!--Noviembre-->
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>24</td><!--Diciembre-->
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                    </tr>
+                    <tr class="num"> <!--semana 6-->
+                        <th></th><!--Septiembre-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <th></th> <!--Octubre-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <th></th><!--Noviembre-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th><!--espacio-->
+                        <td>31</td><!--Diciembre-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="eventos">
+                <h2>Eventos</h2>
+
+                <div class="  evento">
+                    <div class="Ev1">
+                      <div class="cuadrado1"></div>
+                       <p >Pretemporada 2023</p>
+                    </div> 
+                  
+                </div>
+
+                <div class=" evento"> 
+                   <div class="Ev2">
+                     <div class="cuadrado2"></div>
+                     <p >Torneo Regional NOA</p>
+                   </div>
+                </div>
+
+                <div class=" evento"> 
+                    <div class="Ev3">
+                      <div class="cuadrado3"></div>
+                      <p >Copa Roberto Rodriguez</p>
+                    </div>
+                 </div>
+
+                 <div class=" evento"> 
+                    <div class="Ev4">
+                      <div class="cuadrado4"></div>
+                      <p >Copa Gonzalez Molina </p>
+                    </div>
+                 </div>
+
+                 <div class=" evento"> 
+                    <div class="Ev5">
+                      <div class="cuadrado5"></div>
+                      <p >Muestra Anual </p>
+                    </div>
+                 </div>
+               
+
+            </div>
+
+
+            
+
+            
+
+
+        </section>
+
+
+
+
+
+        <!--para que los elementos de abajo no suban hacia arriba el div class clearfix-->
+    <div class="clearfix"></div>
+
+    <footer><!--Pie de Pagina-->
+        <div class="grupo-1">
+
+            <div class="box">
+                <figure>
+                    <a title="Patin Saint Germain" href="#">
+                        <img src="img/loggo.png" alt="Patin Saint Germain">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>UBICACION</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14110.198597534249!2d-64.24809237508546!3d-27.854381228143875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4d3f3173801b%3A0xc6832ba9b2a41ded!2sPSG%20club!5e0!3m2!1ses!2sar!4v1687314923228!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/lgteam_patin/" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="#" class="fa fa-at"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Julieta Suarez</b> - Todos los Derechos Reservados.</small>
+    </div>
+    </footer>
+
+
+
+    </body>
+</html>

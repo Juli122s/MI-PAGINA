@@ -1,0 +1,131 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',Arial,sans-serif;
+
+}
+
+body {
+    background-color: rgb(195, 184, 184);
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    text-align: center;
+    line-height: 80px;
+}
+header a {
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+}
+.galeria {
+    padding: 15px;
+    margin-bottom: 50px;
+}
+.galeria h2 {
+    padding: 5px;
+    border-bottom: 1px solid rgb(57, 56, 56);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.regional {
+    margin-bottom: 15px;
+}
+.regional img {
+
+    float: left;
+    width: 22%;
+    height: 200px;
+    margin: 4px 20px;
+
+}
+
+.copa img {
+    float: left;
+    width: 22%;
+    height: 200px;
+    margin: 4px 20px;
+}
+
+.esp {
+    width: 100%;
+    height: 100px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+.clearfix{ /**/
+
+    clear: both; /*para que cuando yo floto los elementos , los que estan abajo se queden en su sitio*/
+
+
+}
+
+
+/*--------PIE DE PAGINA---*/
+
+footer{
+    width: 100%;
+    
+    background: black;
+    color: aliceblue;
+}
+
+footer .grupo-1{ /*donde se encuentra el logo la ubicacion y las redes*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+footer .grupo-1 .box figure{ /*el figure del logo*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+footer .grupo-1 .box iframe {
+    color: #efefef;
+    
+}
+
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #2d343a;
+    text-align: center;
+    transition: all 300ms ease;
+}
+footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+footer .grupo-2{
+    padding: 10px 8px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.grupo-2 small{
+    font-size: 15px;
+}

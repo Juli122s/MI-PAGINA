@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;/*para sacar todos los subrayados*/
+    list-style: none;/*borra los estilos de las listas*/
+    box-sizing: border-box;/* para que los elemntos no se salgan del contenedor*/
+    font-family: 'Montserrat',Arial,sans-serif;
+
+}
+
+body{
+    background: rgb(195, 184, 184);
+}
+
+nav{
+    background: rgb(88, 88, 98);
+    width: 100%;
+    height: 80px;
+}
+.enlace{ /*la clase donde esta el logo*/
+    position: absolute;
+    padding: 0px 90px; /*margen interno de arriba y abajo en 20 y 50 a los lados*/
+}
+
+.logo{
+    height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block; /*pongan un al lado del otro*/
+    line-height: 80px;/*para centrarlo que es la altura del nav*/
+    margin:0 5px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ li a:hover{
+    color: rgb(2, 0, 7);
+    transition: .5s;
+}
+
+
+/*ahora configuramos el icono del menu*/
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;/*centrar al icono en vertical*/
+    margin-right:40px;
+    cursor: pointer; /*pone la manito */
+    display: none;/*esto para que no se vea en dispositivos grandes es decir compu o table,SOLO PARA DISPOSITIVOS PEQUEÑOS*/
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+/*-----------Noticia completa-------------*/
+
+
+
+
+.Noticia {
+    width: 55%;
+    height: 3500px;
+    background: rgba(255, 255, 0, 0);
+    margin-left: 12%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+.Noticia h2 { /*titulo de cada noticia*/
+    color: #2d343a;
+  border-bottom: 1px solid rgb(67, 64, 64);
+}
+
+.Noticia .text { /*el texto de abajo del titulo de cada noticia*/
+    color: #2d343a;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(67, 64, 64);
+
+}
+
+.Noticia img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+
+}
+
+.Noticia h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(67, 64, 64);;
+    text-align: center;
+}
+.Noticia .part1 {
+    float: left;
+    width: 32.713%;
+    height: 650px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Noticia .part2 {
+    float: left;
+    width: 32.713%;
+    height: 650px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Noticia .part3 {
+    float: left;
+    width: 32.713%;
+    height: 480px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Noticia .part4 {
+    float: left;
+    width: 32.713%;
+    height: 350px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Noticia .part5 {
+    float: left;
+    width: 32.713%;
+    height: 150px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Noticia .part6 {
+    float: left;
+    width: 32.713%;
+    height: 170px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.resumen {
+    width: 20%;
+    height: 500px;
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    border: 1px solid black;
+}
+
+.resumen .title {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.NotRelacionada {
+    padding-left: 10px;
+    height: 60px;
+    background: rgba(0, 0, 255, 0.011);
+    margin-top: 10px;
+}
+.NotRelacionada h4 {
+    font-size: 13px;
+}
+
+.NotRelacionada p {
+    color: rgb(217, 25, 25);
+
+}
+
+/*-----------------------slider automatico-------------------------------*/
+.slider-frame {
+    float: left;
+    width: 20%;
+    height: 400px;
+    margin:15px auto 0;  /*50 en top, auto para centrar y 0 de botton*/
+    overflow: hidden;
+}
+
+
+.slider-frame ul {
+    display: flex; /*para que todas las imagenes queden una al lado de otra*/
+    padding: 0;
+    width: 400%;  /*cada imagen que yo coloco equivale al 100%*/
+
+
+    /*para la amnimacion*/
+    animation: slide 20s infinite alternate ease-in-out;/*el slide es para que asi se llame la animacion, el ease-in-out para que la animacion de la imagen entre suave y salga suave */
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {/*para que cada imagen ocupe el 100%*/
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@keyframes slide { /*establece como se van a esta moviendo las imagenes para aue estas se vayan reproduciendo*/
+
+    0%{margin-left: 0% ;} /*la primera imagen iria del ceero al 20% respecto al tiempo que pusimos de 15s, ede decir divide el tiempo en cant de fotos*/
+    20%{margin-left: 0% ;}
+
+    25%{margin-left: -100%;}/*cuando este en -100 para completa la imagen,del 25,el 5% es lo que tarde en pasar a la sig img*/
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------*/
+
+
+
+
+.linea {
+    width: 75%;
+    height: 50px;
+    background: rebeccapurple;
+    border-top: 1px solid black;
+    margin-left: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+.clearfix{ /**/
+
+    clear: both; /*para que cuando yo floto los elementos , los que estan abajo se queden en su sitio*/
+
+
+}
+
+
+/*--------PIE DE PAGINA---*/
+
+footer{
+    width: 100%;
+    
+    background: black;
+    color: aliceblue;
+}
+
+footer .grupo-1{ /*donde se encuentra el logo la ubicacion y las redes*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+footer .grupo-1 .box figure{ /*el figure del logo*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+footer .grupo-1 .box iframe {
+    color: #efefef;
+    
+}
+
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #2d343a;
+    text-align: center;
+    transition: all 300ms ease;
+}
+footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+footer .grupo-2{
+    background-color: #292b2d;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.grupo-2 small{
+    font-size: 15px;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*para tables*/
+@media (max-width: 952px){
+
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+    nav ul li a{
+        font-size: 15px;/*achica el tamaño de los enlaces una vez que se pone en tamaño table*/
+        margin:0 2px;
+    }
+
+    nav ul li a{
+        color: aliceblue;
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    /*parte de noticia*/
+
+    #content{
+        background: rgba(138, 18, 18, 0);
+        width: 55%;
+        height: 400%;
+        padding: 15px;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .noti {/*el cuadro donde se encuentra el enlace y titulo*/
+        padding-bottom: 5px;
+    }
+    .noti h3{/*noticias recientes*/
+        font-size: 16px;
+    }
+    .noti a{/*es el que dice ver todas noticias*/
+        font-size: 18px;
+    }
+
+    .article  h2{/*titulo de cada articulo*/
+        font-size: 18px;
+    }
+    .article p{/*texto de cada articulo*/
+        font-size: 14px;
+    }
+
+    /*eventos*/
+
+   
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/*para celular*/
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;  /*muestra el icono*/
+     }
+ 
+    ul{
+     position: absolute;
+     /*position: fixed;*/
+      width: 100%;
+      height: 100vh;
+      background: rgb(56, 56, 61);
+      top:80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;/*transicion a todo el elemento*/
+     }
+ 
+     nav ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+     }
+ 
+     nav ul li a{
+         font-size: 20px;
+     }
+     li a:hover, li a.active{
+         background: none;/*sin color*/
+         color: rgb(0, 94, 255);       
+     }
+ 
+     #check:checked ~ul {/*para que muestre el menu cuando el check este marcado es decir checked*/
+         left: 0;
+     }
+ 
+     /*--------------------galeria de fotos------------------*/
+ 
+    
+ 
+     /*parte de noticia*/
+ 
+     #content{
+         width: 80%;
+         height: 400%;
+         padding: 5px;
+         margin-left: 10%;
+ 
+     }
+ 
+     .noti {/*el cuadro donde se encuentra el enlace y titulo*/
+         padding-bottom: 5px;
+     }
+     .noti h3{/*noticias recientes*/
+         font-size: 14px;
+     }
+     .noti a{/*es el que dice ver todas noticias*/
+         font-size: 13px;
+     }
+ 
+     .article  h2{/*titulo de cada articulo*/
+         font-size: 17px;
+     }
+     .article p{/*texto de cada articulo*/
+         font-size: 16px;
+     }
+ 
+     /*para los eventos*/
+ 
+     .calendario{
+         float: left;
+         width: 80%;
+         height: 500%;
+         padding: 15px;
+         margin-left: 10%;
+         margin-top: 5%;
+     }
+ 
+     /*PIE DE PAGINA*/
+ 
+     .pie-pagina .grupo-1{
+         width: 90%;
+         grid-template-columns: repeat(1, 1fr);
+         grid-gap:30px;
+         padding: 35px 0px;
+     }
+}

@@ -1,0 +1,433 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;/*para sacar todos los subrayados*/
+    list-style: none;/*borra los estilos de las listas*/
+    box-sizing: border-box;/* para que los elemntos no se salgan del contenedor*/
+    font-family: 'Montserrat',Arial,sans-serif;
+
+}
+
+body{
+    background: rgb(195, 184, 184);
+}
+
+nav{
+    background: rgb(88, 88, 98);
+    width: 100%;
+    height: 80px;
+}
+.enlace{ /*la clase donde esta el logo*/
+    position: absolute;
+    padding: 0px 90px; /*margen interno de arriba y abajo en 20 y 50 a los lados*/
+}
+
+.logo{
+    height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block; /*pongan un al lado del otro*/
+    line-height: 80px;/*para centrarlo que es la altura del nav*/
+    margin:0 5px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ li a:hover{
+    color: rgb(2, 0, 7);
+    transition: .5s;
+}
+
+
+/*ahora configuramos el icono del menu*/
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;/*centrar al icono en vertical*/
+    margin-right:40px;
+    cursor: pointer; /*pone la manito */
+    display: none;/*esto para que no se vea en dispositivos grandes es decir compu o table,SOLO PARA DISPOSITIVOS PEQUEÑOS*/
+}
+
+#check{
+    display: none;
+}
+
+
+/*-------------------------------calendario-------------------------------------------------*/
+
+
+.contenido {
+    float: left;
+    width: 90%;
+    background: rgba(0, 128, 0, 0);
+    height: 900px;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    background: rgba(255, 0, 0, 0);
+
+}
+
+.calendario {
+    float: left;
+    width: 75%;
+    height: 68%;
+    background: rgba(106, 0, 255, 0);
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+}
+
+.calendario h2 {
+    padding-left: 35%;
+    border-bottom: 1px solid #4f4c4c;
+    color: #3c3838;
+}
+
+.calendario table {
+    width: 100%;
+    padding-top: 20px;
+    background: rgba(255, 255, 0, 0);
+    /*padding-left: 4%;*/
+}
+
+ table .mes th {
+    border: 1px solid black;
+    padding-left: 80px;
+    padding-right: 60px;
+    background: #8b7373;
+}
+
+table .dias td  {
+    padding-left: 10px;
+    border: 1px solid black;
+    background: #c19898;
+  
+
+}
+table .num  td {
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+table .num  .e1 {/*es el color que subraya en el calendario*/
+    background: rgb(84, 200, 226);
+}
+
+table .num  .e2 {/*es el color que subraya en el calendario*/
+    background: rgb(247, 252, 101);
+}
+
+table .num  .e3 {/*es el color que subraya en el calendario*/
+    background: rgb(163, 84, 84);
+
+}
+
+table .num  .e4{/*es el color que subraya en el calendario*/
+    background: rgb(128, 61, 182);
+
+}
+table .num  .e5{/*es el color que subraya en el calendario*/
+    background: rgb(200, 187, 68);
+
+}
+/*---------------------------EVENTOS------------------------------*/
+
+.eventos {
+    width:30%;
+    height: 600px;
+    padding: 30px;
+    padding-top: 30px;
+    background: rgba(179, 123, 71, 0);
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border:1px solid rgb(45, 43, 43) ;
+}
+
+.eventos h2 {
+    padding-left: 35%;
+    background:rgb(201, 145, 164);
+    width: 100%;
+}
+
+.eventos .evento {
+    height: 50px;
+    width: 100%;
+   padding: 10px;
+   padding-left: 15%;
+} 
+
+.eventos .evento p {/*el texto de cada cuadrado de color es*/
+  
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.Ev1 { /*primer evento*/
+    margin-top: 40px;
+    padding: 5px;
+}
+.cuadrado1 {
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:  rgb(84, 200, 226);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.Ev2 { /*segundo evento*/
+    margin-top: 40px;
+    padding: 5px;
+}
+.cuadrado2 {
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:  rgb(247, 252, 101);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.Ev3 { /*tercer evento*/
+    margin-top: 40px;
+    padding: 5px;
+}
+.cuadrado3 {
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: rgb(163, 84, 84);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.Ev4 { /*cuarto evento*/
+    margin-top: 40px;
+    padding: 5px;
+}
+.cuadrado4 {
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:  rgb(128, 61, 182);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.Ev5 { /*quinto evento*/
+    margin-top: 40px;
+    padding: 5px;
+}
+.cuadrado5 {
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:  rgb(200, 187, 68);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+.clearfix{ /**/
+
+    clear: both; /*para que cuando yo floto los elementos , los que estan abajo se queden en su sitio*/
+
+
+}
+
+
+/*--------PIE DE PAGINA---*/
+
+footer{
+    width: 100%;
+    
+    background: black;
+    color: aliceblue;
+}
+
+footer .grupo-1{ /*donde se encuentra el logo la ubicacion y las redes*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+footer .grupo-1 .box figure{ /*el figure del logo*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+footer .grupo-1 .box iframe {
+    color: #efefef;
+    
+}
+
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #2d343a;
+    text-align: center;
+    transition: all 300ms ease;
+}
+footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+footer .grupo-2{
+    background-color: #292b2d;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*para tables*/
+@media (max-width: 952px){
+
+
+
+    /*parte de noticia*/
+
+    #content{
+        background: rgba(138, 18, 18, 0);
+        width: 55%;
+        height: 400%;
+        padding: 15px;
+        margin-left: 5%;
+        float: left;
+    }
+
+   
+   
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/*para celular*/
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;  /*muestra el icono*/
+     }
+ 
+    ul{
+     position: absolute;
+     /*position: fixed;*/
+      width: 100%;
+      height: 100vh;
+      background: rgb(56, 56, 61);
+      top:80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;/*transicion a todo el elemento*/
+     }
+ 
+     nav ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+     }
+ 
+     nav ul li a{
+         font-size: 20px;
+     }
+     li a:hover, li a.active{
+         background: none;/*sin color*/
+         color: rgb(0, 94, 255);       
+     }
+ 
+     #check:checked ~ul {/*para que muestre el menu cuando el check este marcado es decir checked*/
+         left: 0;
+     }
+ 
+     /*--------------------galeria de fotos------------------*/
+ 
+    
+ 
+     /*parte de noticia*/
+ 
+     #content{
+         width: 80%;
+         height: 400%;
+         padding: 5px;
+         margin-left: 10%;
+ 
+     }
+ 
+    
+ 
+     
+ 
+     /*PIE DE PAGINA*/
+ 
+     .pie-pagina .grupo-1{
+         width: 90%;
+         grid-template-columns: repeat(1, 1fr);
+         grid-gap:30px;
+         padding: 35px 0px;
+     }
+ 
+ }

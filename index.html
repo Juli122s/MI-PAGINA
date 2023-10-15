@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Club de Patinaje Artistico</title>
+        <link rel="icon" href="img/loggo.png">
+        <link rel="stylesheet" href="style.css">
+        <!--icono de la barr del menu para utilizar iconos de esa pagina-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+         <!--Iconos-->
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+         <!--los dos que siguen son para la galeria de fotos-->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+ 
+    
+    </head>
+
+    <body>
+        <nav> 
+           <!--esto es para que el menu sea reesposiv es decir de adapte a cualquier telefono o table etc-->
+           <!--as primeras tres lineas es para que cuando abra la pagina en el celu aparezca el menu al lado para entrar y ver los enlaces-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <!--iconosss-->
+                <i class="fas fa-bars"></i>      
+            </label>
+            <a href="#" class="enlace">
+                <img src="img/loggo.png " alt="" title="Club de Patinaje Artistico" class="logo">
+            </a>
+
+            <ul>
+                <li><a  href="principal.html">Inicio</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="inscripciones.html">Inscripciones</a></li>
+                <li><a href="abono.html">Abono</a></li>
+                <li><a  href="cuenta.html">Cuenta</a></li>
+            </ul>
+        </nav>
+
+       
+       
+
+       <!-- GALERIA DE FOTOSS-->
+
+
+       <div class="carousel">
+        <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="carousel__lista">
+                <div class="carousel__elemento">
+                    <img src="galeria/2.png" alt="">
+                    
+                </div>
+                <div class="carousel__elemento">
+                    <img src="galeria/3.png" alt="">
+                    
+                </div>
+                <div class="carousel__elemento">
+                    <img src="galeria/4.png" alt="">
+                    
+                </div>
+                <div class="carousel__elemento">
+                    <img src="galeria/5.png" alt="">
+                    
+                </div>
+
+                <div class="carousel__elemento">
+                    <img src="galeria/6.png" alt="">
+                    
+                </div>
+                <div class="carousel__elemento">
+                    <img src="galeria/7.png" alt="">
+                    
+                </div>
+                <div class="carousel__elemento">
+                    <img src="galeria/8.png" alt="">
+                    
+                </div>
+                <div class="carousel__elemento">
+                    <img src="galeria/9.png" alt="">
+                    
+                </div>
+            </div>
+
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div> <!--es un tabulador-->
+
+        <a href="galeria.html">VER GALERIA COMPLETA</a>
+
+    </div>
+    
+
+     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script><!--para que la galeria sea responsive es una biblioteca-->
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script><!--para los iconos del menu-->
+     <script src="main.js"></script>
+
+
+      <!--seccion contenido-->
+        <section id="content"> 
+            <div class="noti">
+                <h3 >Noticias Principales</h3>
+                <a  href="VerNoticias.html">VER TODAS LAS NOTICIAS </a>
+            </div>
+           <article class="article primero"><!--crea articulos-->
+                <img class="not " src="img/PrimerNot.png"alt="">
+                <h2>Convocatoria Seleccionado Santiagueño</h2>
+
+                <p>Aperiam perferendis in nihil quisquam minus consequuntur quos,
+                impedit veniam consequatur laboriosam, aut, quo excepturi ea.
+                 Autem quam culpa possimus blanditiis accusantium dipisicing elitdipisicing elit dipisicing elit.
+                 dipisicing elit santium dipisicing elitdipisicing elit.
+                </p>
+
+            </article>
+            <article class="article seg"><!--crea articulos-->
+                <img class="not " src="img/PrimerNot.png" alt="">
+
+                <h2>Torneo Regional Noa</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, 
+                    facere sunt? Mollitia officia quod blanditiis repellat dignissimos aliquam quas, 
+                    quo non quos.Praesentium repudiandae soluta illum accusamus rem. 
+                    Omnis, voluptates.
+                    .dipisicing elit.dipisicing elit santium dipisicing elitdipisicing elit.
+                </p>
+
+            </article>
+            <article class="article ter"><!--crea articulos-->
+                
+                <img class="not " src="img/PrimerNot.png" alt="">
+
+                <h2>Torneo Regional </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, 
+                    facere sunt? Mollitia officia quod blanditiis repellat dignissimos aliquam quas, 
+                    quo non quos.Praesentium repudiandae soluta illum accusamus rem. 
+                    Omnis, voluptates.
+                   dipisicing elit.dipisicing elit santium dipisicing elitdipisicing elit.
+                </p>
+
+            </article>
+            <article class="article"><!--crea articulos-->
+                
+                <img class="not " src="img/PrimerNot.png"alt="">
+                <h2>Convocatoria Seleccionado Santiagueño</h2>
+
+                <p>Aperiam perferendis in nihil quisquam minus consequuntur quos,
+                impedit veniam consequatur laboriosam, aut, quo excepturi ea.
+                 Autem quam culpa possimus blanditiis accusantium dipisicing elitdipisicing elit dipisicing elit.
+                 dipisicing elit santium dipisicing elitdipisicing elit.
+                </p>
+
+            </article>
+
+        </section>
+
+       
+     <aside class="BDerecha">
+        <aside class="calendario"><!--SEMANTICAMENTE REPRESENTA UNA BARRA LATERAL-->
+            
+            <div class="event">
+               <h3 >Eventos</h3>
+               <a   href="VerCalendario.html">Ver calendario </a>
+            </div>
+
+            <div class="evento">
+                <div class="evento-text">
+                 <h4><b>Copa Roberto Rodriguez 2023</b></h4>
+                 <img  class="cal" src="img/calendario.png" alt="">
+                 <p class="fech">15 de Octubre.</p>
+                 <img class="ubi" src="img/mapa.png" alt="">
+                 <p class="dir">Cordoba,Capital</p>
+               </div>
+               <div class="evento-Foto">
+                <a  title="Nodo Tecnologico" href="https://goo.gl/maps/Cd4jTuVZhtDZUDJ69"><img  src="img/nodo.jpg" alt="Nodo Tecnologico"/></a>
+               </div>
+            </div>
+
+            <div class="evento">
+                <div class="evento-text">
+                 <h4><b>Regional 2023</b></h4>
+                 <img  class="cal" src="img/calendario.png" alt="">
+                 <p class="fech">16 de Julio.</p>
+                 <img  class="ubi" src="img/mapa.png" alt="">
+                 <p class="dir">Sgo del Estero.</p>
+                </div>
+
+                <div class="evento-Foto">
+                    <a  title="Nodo Tecnologico" href="https://goo.gl/maps/Cd4jTuVZhtDZUDJ69"><img  src="img/nodo.jpg" alt="Nodo Tecnologico"/></a>
+                </div>
+                
+            </div>
+
+            <div class="evento">
+                <div class="evento-text">
+                 <h4><b>Regional 2023</b></h4>
+                 <img  class="cal" src="img/calendario.png" alt="">
+                 <p class="fech">16 de Julio.</p>
+                 <img class="ubi" src="img/mapa.png" alt="">
+                 <p class="dir">Sgo del Estero.</p>
+               </div>
+               <div class="evento-Foto">
+                <a  title="Nodo Tecnologico" href="https://goo.gl/maps/Cd4jTuVZhtDZUDJ69"><img  src="img/nodo.jpg" alt="Nodo Tecnologico"/></a>
+               </div>
+            
+            </div>
+        </aside> <!--este aside es del calendario-->
+
+        <!--Publicidad de la tienda de ropa-->
+        <div class="publiTienda">
+            
+            <figure>
+               <img src="img/indumentaria.jpg" alt="">
+                <div class="capa">
+                    <a href="TiendaClub/tienda.html">
+                     <h3>Nuevos Ingresos</h3>
+                     <p>Adquirí la nueva indumentaria del club en el sitio oficial.</p>
+                   </a>
+                </div>
+            </figure>
+
+        </div>
+     </aside>
+
+    </div>
+    <!--para que los elementos de abajo no suban hacia arriba el div class clearfix-->
+    <div class="clearfix"></div>
+
+        <footer><!--Pie de Pagina-->
+            <div class="grupo-1">
+
+                <div class="box">
+                    <figure>
+                        <a title="Patin Saint Germain" href="#">
+                            <img src="img/loggo.png" alt="Patin Saint Germain">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>UBICACION</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14110.198597534249!2d-64.24809237508546!3d-27.854381228143875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4d3f3173801b%3A0xc6832ba9b2a41ded!2sPSG%20club!5e0!3m2!1ses!2sar!4v1687314923228!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/lgteam_patin/" class="fa fa-instagram"></a>
+                        <a href="https://web.whatsapp.com/" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-at"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Julieta Suarez</b> - Todos los Derechos Reservados.</small>
+        </div>
+        </footer>
+
+    </body>
+
+
+</html>

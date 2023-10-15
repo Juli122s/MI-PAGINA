@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;/*para sacar todos los subrayados*/
+    list-style: none;/*borra los estilos de las listas*/
+    box-sizing: border-box;/* para que los elemntos no se salgan del contenedor*/
+    font-family: 'Montserrat',Arial,sans-serif;
+}
+
+body{
+    background: rgb(195, 184, 184);
+}
+
+nav{
+    background: rgb(88, 88, 98);
+    width: 100%;
+    height: 80px;
+}
+.enlace{ /*la clase donde esta el logo*/
+    position: absolute;
+    padding: 0px 90px; /*margen interno de arriba y abajo en 20 y 50 a los lados*/
+}
+
+.logo{
+    height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block; /*pongan un al lado del otro*/
+    line-height: 80px;/*para centrarlo que es la altura del nav*/
+    margin:0 5px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ li a:hover{
+    color: rgb(2, 0, 7);
+    transition: .5s;
+}
+
+
+/*ahora configuramos el icono del menu*/
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;/*centrar al icono en vertical*/
+    margin-right:40px;
+    cursor: pointer; /*pone la manito */
+    display: none;/*esto para que no se vea en dispositivos grandes es decir compu o table,SOLO PARA DISPOSITIVOS PEQUEÑOS*/
+}
+
+#check{
+    display: none;
+}
+
+
+
+.categorias {
+    float: left;
+    
+    width: 55%;
+    height: 900px;
+    background: rgba(255, 0, 0, 0);
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+.categorias h2 {
+    margin-left: 3%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    border-bottom: 1px solid black;
+}
+
+
+/*------------CATEGORIA INICIAL-------------*/
+.categorias .inicial {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    border-top: 1px solid rgb(53, 52, 52);
+}
+.categorias .inicial:hover {
+    box-shadow: 10px 10px 80px 10px rgb(52, 51, 51);/*para poner sobra al cuadro*/
+}
+.inicial img{/*el div donde esssta la imagen*/
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.inicial .info {/*el cuadro dnde se encuentra la informacion*/
+    float: left;
+    height: 250px;
+    width: 65%;
+    padding: 10px;
+}
+.inicial .info h1 {/*la imagen que esta dentro del div*/
+    padding: 5px;
+    align-items: center;
+}
+.inicial .info p {
+    
+    margin-bottom: 15px;
+}
+
+.inicial .info a {
+    border-radius: 4px;
+    background: rgb(111, 103, 103);
+   /* padding-left: 10px;
+    padding-right: 10px;*/
+    padding: 5px 15px;
+    margin-left: 40%;
+    margin-top: 50px;
+    color: white;
+}
+.inicial .info a:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+/*------------CATEGORIA AVANZADO-------------*/
+.categorias .avanzado{
+    
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    border-top: 1px solid rgb(53, 52, 52);
+}
+.categorias .avanzado:hover {
+    box-shadow: 10px 10px 80px 10px rgb(52, 51, 51);/*para poner sobra al cuadro*/
+}
+
+.avanzado img{/*el div donde esssta la imagen*/
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.avanzado .info {/*el cuadro dnde se encuentra la informacion*/
+    float: left;
+    height: 250px;
+    width: 65%;
+    padding: 10px;
+}
+.avanzado .info h1 {/*la imagen que esta dentro del div*/
+    padding: 5px;
+    align-items: center;
+    
+}
+.avanzado .info p {
+    margin-bottom: 15px;
+}
+
+.avanzado .info a {
+    border-radius: 4px;
+    background: rgb(111, 103, 103);
+   /* padding-left: 10px;
+    padding-right: 10px;*/
+    padding: 5px 15px;
+    margin-left: 40%;
+    margin-top: 50px;
+    color: white;
+}
+.avanzado .info a:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+
+/*------------CATEGORIA COMPETENCIA-------------*/
+.categorias .competencia {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    border-top: 1px solid rgb(53, 52, 52);
+}
+
+.categorias .competencia:hover {
+    box-shadow: 10px 10px 80px 10px rgb(52, 51, 51);/*para poner sobra al cuadro*/
+}
+.competencia img{/*el div donde esssta la imagen*/
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.competencia .info {/*el cuadro dnde se encuentra la informacion*/
+    float: left;
+    height: 250px;
+    width: 65%;
+    padding: 10px;
+}
+.competencia .info h1 {/*la imagen que esta dentro del div*/
+    padding: 5px;
+    align-items: center;    
+}
+.competencia .info p {
+    margin-bottom: 15px;
+}
+
+.competencia .info a {
+    border-radius: 4px;
+    background: rgb(111, 103, 103);
+    padding: 5px 15px;
+    margin-left: 40%;
+    margin-top: 50px;
+    color: white;
+}
+.competencia .info a:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+
+/*------------INSCRIPCION A LAS CLINICAS------------------------*/
+.clinicas {
+    float: left;
+    width: 35%;
+    height: 900px;
+    background: rgba(0, 0, 255, 0);
+    padding: 10px;
+    margin-top: 4%;
+
+}
+
+.clinicas h2 {
+    margin-left: 3%;
+    margin-bottom: 5%;
+    margin-right: 3%;
+    border-bottom: 1px solid black;
+}
+
+.clinicas div {
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+
+.clinicas div:hover {
+    box-shadow: 10px 10px 80px 10px rgb(52, 51, 51);/*para poner sobra al cuadro*/
+}
+
+.clinicas img {
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.clinicas p {
+    
+    padding: 25px;
+}
+.clinicas a {
+    margin-left: 40%;
+    margin-top: 2%;
+    border-radius: 4px;
+    background: rgb(111, 103, 103);
+    padding: 5px 15px;
+    color: white;
+}
+.clinicas a:hover {
+    border: 1px solid black;
+    color: black;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+.clearfix{ /**/
+
+    clear: both; /*para que cuando yo floto los elementos , los que estan abajo se queden en su sitio*/
+
+
+}
+
+
+/*--------PIE DE PAGINA---*/
+
+footer{
+    width: 100%;
+    
+    background: black;
+    color: aliceblue;
+}
+
+footer .grupo-1{ /*donde se encuentra el logo la ubicacion y las redes*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+footer .grupo-1 .box figure{ /*el figure del logo*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+footer .grupo-1 .box iframe {
+    color: #efefef;
+    
+}
+
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #2d343a;
+    text-align: center;
+    transition: all 300ms ease;
+}
+footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+footer .grupo-2{
+    background-color: #292b2d;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*para tables*/
+@media (max-width: 952px){
+
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+    nav ul li a{
+        font-size: 15px;/*achica el tamaño de los enlaces una vez que se pone en tamaño table*/
+        margin:0 2px;
+    }
+
+    nav ul li a{
+        color: aliceblue;
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    /*parte de noticia*/
+
+    #content{
+        background: rgba(138, 18, 18, 0);
+        width: 55%;
+        height: 400%;
+        padding: 15px;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .noti {/*el cuadro donde se encuentra el enlace y titulo*/
+        padding-bottom: 5px;
+    }
+    .noti h3{/*noticias recientes*/
+        font-size: 16px;
+    }
+    .noti a{/*es el que dice ver todas noticias*/
+        font-size: 18px;
+    }
+
+    .article  h2{/*titulo de cada articulo*/
+        font-size: 18px;
+    }
+    .article p{/*texto de cada articulo*/
+        font-size: 14px;
+    }
+
+    /*eventos*/
+
+   
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/*para celular*/
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;  /*muestra el icono*/
+     }
+ 
+    ul{
+     position: absolute;
+     /*position: fixed;*/
+      width: 100%;
+      height: 100vh;
+      background: rgb(56, 56, 61);
+      top:80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;/*transicion a todo el elemento*/
+     }
+ 
+     nav ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+     }
+ 
+     nav ul li a{
+         font-size: 20px;
+     }
+     li a:hover, li a.active{
+         background: none;/*sin color*/
+         color: rgb(0, 94, 255);       
+     }
+ 
+     #check:checked ~ul {/*para que muestre el menu cuando el check este marcado es decir checked*/
+         left: 0;
+     }
+ 
+     /*--------------------galeria de fotos------------------*/
+ 
+    
+ 
+     /*parte de noticia*/
+ 
+     #content{
+         width: 80%;
+         height: 400%;
+         padding: 5px;
+         margin-left: 10%;
+ 
+     }
+ 
+     .noti {/*el cuadro donde se encuentra el enlace y titulo*/
+         padding-bottom: 5px;
+     }
+     .noti h3{/*noticias recientes*/
+         font-size: 14px;
+     }
+     .noti a{/*es el que dice ver todas noticias*/
+         font-size: 13px;
+     }
+ 
+     .article  h2{/*titulo de cada articulo*/
+         font-size: 17px;
+     }
+     .article p{/*texto de cada articulo*/
+         font-size: 16px;
+     }
+ 
+     /*para los eventos*/
+ 
+     .calendario{
+         float: left;
+         width: 80%;
+         height: 500%;
+         padding: 15px;
+         margin-left: 10%;
+         margin-top: 5%;
+     }
+ 
+     /*PIE DE PAGINA*/
+ 
+     .pie-pagina .grupo-1{
+         width: 90%;
+         grid-template-columns: repeat(1, 1fr);
+         grid-gap:30px;
+         padding: 35px 0px;
+     }
+ 
+ }

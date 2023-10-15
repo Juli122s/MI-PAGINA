@@ -1,0 +1,625 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;/*para sacar todos los subrayados*/
+    list-style: none;/*borra los estilos de las listas*/
+    box-sizing: border-box;/* para que los elemntos no se salgan del contenedor*/
+    font-family: 'Montserrat',Arial,sans-serif;
+
+}
+
+body{
+    background: rgb(195, 184, 184);
+    
+}
+
+nav{
+    background: rgb(88, 88, 98);
+    width: 100%;
+    height: 80px;
+}
+.enlace{ /*la clase donde esta el logo*/
+    position: absolute;
+    padding: 0px 90px; /*margen interno de arriba y abajo en 20 y 50 a los lados*/
+}
+
+.logo{
+    height: 80px;
+transition: all 350ms;
+}
+
+.logo:hover 
+{
+transform: scale(1.10);
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block; /*pongan un al lado del otro*/
+    line-height: 80px;/*para centrarlo que es la altura del nav*/
+    margin:0 5px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ li a:hover{
+    color: rgb(2, 0, 7);
+    transition: .5s;
+}
+
+
+
+/*ahora configuramos el icono del menu*/
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;/*centrar al icono en vertical*/
+    margin-right:40px;
+    cursor: pointer; /*pone la manito */
+    display: none;/*esto para que no se vea en dispositivos grandes es decir compu o table,SOLO PARA DISPOSITIVOS PEQUEÑOS*/
+}
+
+#check{
+    display: none;
+}
+
+
+/*-----------galeria de fotos------------*/
+
+
+.carousel{
+    max-width: 100%;
+	width: 95%;
+	margin: auto;
+    height: 380px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(175, 165, 165);
+
+}
+
+
+.carousel__contenedor {
+    position: relative;/*para despues poder acomodar las flechar en absoluto*/
+}
+
+.carousel__anterior, 
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 300px;
+    border: none; /*para quitar el borde*/
+    top: 0; /*para alinear correctamente las flechas*/
+    cursor: pointer;
+    line-height: 30px; /*alto del boton*/
+    text-align: center;
+    background: none;
+    color: #060606;
+    opacity: 100%;
+    background:  rgb(175, 165, 165);
+
+}
+/*esto es donde se van a ubicar las flechas*/
+.carousel__anterior {
+    left: -35px;
+    
+}
+
+.carousel__siguiente {
+    right: -35px;
+}
+
+
+.carousel__lista {
+    overflow: hidden; /*para eliminar la barra que desliza*/
+    height: 300px;
+}
+
+.carousel__elemento img {
+    height: 300px;
+   
+
+}
+
+.carousel a { /*el enlace de ver galeria completa*/
+    float: right;
+    color:  rgb(104, 96, 96);
+    cursor: pointer;
+    float: bottom;
+}
+
+.carousel a:hover {
+    color: #060606;
+}
+
+
+
+/*--------------Noticias-------------------------------------*/
+
+#content{
+    
+   
+    width: 45%;
+    height: 400%;
+    padding: 15px;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-right: 2%;
+    float: left;
+    border-right:1px solid rgb(0, 0, 0);
+}
+.noti {
+    height: 30px;
+    border-bottom: 1px solid black;
+    
+}
+.noti h3{/*el que dice noticias principales*/
+    font-size: 20px;
+    float: left;
+}
+
+.noti a{/*enlace de ver todas las noticias*/
+    font-size: 20px;
+    padding-right: 10px;
+    float: right;
+    color: rgb(104, 96, 96);
+}
+.noti a:hover{
+    color: #010101;
+}
+/*articulos en general*/
+.article{
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(90, 81, 84, 0);
+    border: 1px solid rgb(79, 76, 76);
+    height: 220px;
+    border-radius: 10px;
+}
+
+
+/*imagenes de todos los articulos*/
+.article .not{
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-right: 1%;
+}
+/*primer articulo*/
+
+.article  h2{/*titulo de cada articulo*/
+    font-size: 20px;   
+}
+
+.article p{/*texto de cada articulo*/
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+/*-----------------BARRA DERECHA-------------------*/
+
+.BDerecha {
+    float: left;
+    width: 28%;
+    height: 400%;
+    padding-top: 20px
+}
+
+
+/*-------------CALENDIARIO-----------------------*/
+.calendario {
+    
+    width: 98%;
+    height: 550px;
+   margin-top: 2%;
+   margin-left: 2px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.calendario .event{
+    padding-bottom: 10px;
+}
+
+.event h3{
+    font-size: 20px;
+    float: left;
+}
+
+.event  a{/*enlace de ver todas las noticias*/
+    font-size: 20px;
+    padding-right: 10px;
+    float: right;
+    color: rgb(104, 96, 96);
+}
+.event a:hover{
+   
+    color: black;
+}
+
+.evento{/*cada evento en general*/
+   
+    margin-top: 15px;
+    padding: 15px;
+    border-top: 1px solid rgb(79, 73, 73);
+    border-bottom: 1px solid rgb(79, 73, 73);
+    height: 150px;
+    border-radius: 10px;
+}
+
+.evento .evento-text {
+    width: 70%;
+     height: 120px;
+     float: left;
+ 
+ 
+ }
+ .evento .evento-text h4{/*titulo de cada evento*/
+    align-items: center;
+    font-size: 17px;
+ }
+ .evento .evento-text .cal{/*icono de calendario de cada evento*/
+     float: left;
+     width: 30px;
+     height: 30px;
+     margin-top: 10px;
+     margin-bottom: 5px;
+     margin-left: 15px;
+     margin-right: 15px;
+  
+ }
+ .evento-text .fech{/*la fecha del evento*/
+    
+     font-size: 16px;
+     margin: 15px;
+     padding-top: 5px;
+     width: 70%;
+ }
+ 
+ .evento-text .ubi { /*icono de ubi de cada evento*/
+     float: left;
+     width: 30px;
+     height: 30px;
+     margin-left: 15px;
+     margin-right: 5px;
+ }
+
+ .evento-text .dir {/*direccion de cada evento*/
+    float: left;
+     font-size: 16px;
+     margin: 5px;
+     padding-top: 5px;
+     width: 50%;
+     background: rgba(255, 0, 0, 0);
+    }
+ .evento .evento-Foto{
+     float: right;
+     width: 30%;
+     height: 120px;
+     align-items: center;
+ }
+ .evento-Foto img {/*imagen con el llink de la direcion*/
+     width: 100%;
+     height: 120px;
+ }
+ 
+
+
+/*--------------PUBLICIDAD TIENDA-------------*/
+
+.publiTienda {
+
+    width: 100%;
+    height: 400px;
+    padding: 70px;    
+    
+}
+
+ 
+.publiTienda figure {
+    position: relative;/*para que la foto quede abajo*/
+    height:300px;
+    width: 300px; 
+    overflow: hidden; /*oculta todo lo que esta fuera de la altura y ancho indicado*/
+    border-radius:6px ;/*el redondeado de las puntas de la foto*/
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50) ; /*la sombra de la foto, el 0.50 es de transparente*/
+    cursor: pointer;/*para que cuando pase el mouse cambie a la manito*/
+}
+
+.publiTienda figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.publiTienda  figure .capa {
+    position: absolute; /*para que el el texto se coloque sobre la foto*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(84, 97, 98, 0.7);/*el color que se va  a poner cuando pase el mouse por la foto*/
+    transition: all 500ms ease-out;/**/
+    opacity: 0; /*oculta el color de la capa*/
+    visibility: hidden; /*que no se vea el texto*/
+    text-align: center;
+}
+
+.publiTienda  figure:hover > .capa{/*una vez que pase el mouse por la foto se vea el texto*/
+    opacity: 1;/*que se muestre*/
+    visibility: visible;
+
+}
+
+.publiTienda  figure:hover > img{
+    transform: scale(1.3); /*le hace un zoom a la imagen*/
+}
+
+.publiTienda  figure .capa h3 {/*el titulo */
+    color: white;
+    font-weight: 400 ;
+    margin-bottom: 125px;
+    transition: all 500ms ease-out;/**/
+    margin-top: 20px;
+}
+
+.publiTienda  figure:hover > .capa h3{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.publiTienda  figure .capa p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;/*para que separe un poco las lineas*/
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+.clearfix{ /**/
+
+    clear: both; /*para que cuando yo floto los elementos , los que estan abajo se queden en su sitio*/
+
+
+}
+
+
+/*--------PIE DE PAGINA---*/
+
+footer{
+    width: 100%;
+    
+    background: black;
+    color: aliceblue;
+}
+
+footer .grupo-1{ /*donde se encuentra el logo la ubicacion y las redes*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+footer .grupo-1 .box figure{ /*el figure del logo*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+footer .grupo-1 .box iframe {
+    color: #efefef;
+    
+}
+
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #2d343a;
+    text-align: center;
+    transition: all 300ms ease;
+}
+footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+footer .grupo-2{
+    padding: 10px 8px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*para tables*/
+@media (max-width: 952px){
+
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+    nav ul li a{
+        font-size: 15px;/*achica el tamaño de los enlaces una vez que se pone en tamaño table*/
+        margin:0 2px;
+    }
+
+    nav ul li a{
+        color: aliceblue;
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    /*parte de noticia*/
+
+    #content{
+        background: rgba(138, 18, 18, 0);
+        width: 55%;
+        height: 400%;
+        padding: 15px;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .noti {/*el cuadro donde se encuentra el enlace y titulo*/
+        padding-bottom: 5px;
+    }
+    .noti h3{/*noticias recientes*/
+        font-size: 16px;
+    }
+    .noti a{/*es el que dice ver todas noticias*/
+        font-size: 18px;
+    }
+
+    .article  h2{/*titulo de cada articulo*/
+        font-size: 18px;
+    }
+    .article p{/*texto de cada articulo*/
+        font-size: 14px;
+    }
+
+    /*eventos*/
+
+   
+}
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+
+/*para celular*/
+@media (max-width: 858px){
+   .checkbtn{
+     display: block;  /*muestra el icono*/
+    }
+
+   ul{
+    position: absolute;
+    /*position: fixed;*/
+     width: 100%;
+     height: 100vh;
+     background: rgb(56, 56, 61);
+     top:80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;/*transicion a todo el elemento*/
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;/*sin color*/
+        color: rgb(0, 94, 255);       
+    }
+
+    #check:checked ~ul {/*para que muestre el menu cuando el check este marcado es decir checked*/
+        left: 0;
+    }
+
+    /*--------------------galeria de fotos------------------*/
+
+   
+
+    /*parte de noticia*/
+
+    #content{
+        width: 80%;
+        height: 400%;
+        padding: 5px;
+        margin-left: 10%;
+
+    }
+
+    .noti {/*el cuadro donde se encuentra el enlace y titulo*/
+        padding-bottom: 5px;
+    }
+    .noti h3{/*noticias recientes*/
+        font-size: 14px;
+    }
+    .noti a{/*es el que dice ver todas noticias*/
+        font-size: 13px;
+    }
+
+    .article  h2{/*titulo de cada articulo*/
+        font-size: 17px;
+    }
+    .article p{/*texto de cada articulo*/
+        font-size: 16px;
+    }
+
+    /*para los eventos*/
+
+    .calendario{
+        float: left;
+        width: 80%;
+        height: 500%;
+        padding: 15px;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    /*PIE DE PAGINA*/
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+
+}
