@@ -1,6 +1,6 @@
 <?php
 
-class UserSession{ //este es para manejar la sesion nomas
+/*class UserSession{ //este es para manejar la sesion nomas
 
     public function __construct(){
         session_start();

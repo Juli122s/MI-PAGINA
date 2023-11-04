@@ -4,7 +4,7 @@
     session_start();
 
     if(isset($_GET['cerrar_sesion'])){
-        session_unset(); 
+      session_unset(); 
 
         // destroy the session 
         session_destroy(); 
@@ -13,11 +13,11 @@
     if(isset($_SESSION['rol'])){
         switch($_SESSION['rol']){
             case 1:
-                header('location: admin.php');//crear uno para admin de cuenta y abono e inscripciones (profesora)
+                header('location: admin.php');
             break;
 
             case 2:
-                header('location: cuenta.html');        
+                header('location: cuenta.php');        
 
             break;
 
@@ -45,7 +45,7 @@
                 break;
 
                 case 2:
-                header('location: cuenta.html');
+                header('location: cuenta.php');
                 break;
 
                 default:

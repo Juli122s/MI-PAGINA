@@ -10,7 +10,7 @@ class Database{
 
     public function __construct(){
         $this->host = 'localhost';
-        $this->db = 'patin';
+        $this->db = 'pagina_patin';
         $this->user = 'root';
         $this->password = '';
         $this->charset = 'utf8mb4';
@@ -27,7 +27,6 @@ class Database{
             $pdo = new PDO($connection, $this->user, $this->password, $options);
     
             return $pdo;
-            
         }catch(PDOException $e){
             print_r('Error connection: ' . $e->getMessage());
         }

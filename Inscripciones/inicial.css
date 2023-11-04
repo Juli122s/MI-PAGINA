@@ -17,13 +17,7 @@ body{
     background: rgb(7, 7, 7);
 }
 
-a {
-    font-size: 20px;
-    height: 100px;
-    margin-left: 30px;
-    margin-top: 200px;
-    border-bottom: 1px solid black;
-}
+
 /*---------------FORMULARIO--------------*/
 .form h2 {
   text-align: center;
